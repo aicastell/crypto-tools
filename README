@@ -1,0 +1,29 @@
+
+Development of some simple cryptographic tools:
+
+
+    * cesar-key-k.c --> Cesar algorithm with key "k"
+
+        $ echo -ne "helloworld this is a test" | ./cesar-key-k -e 3 | ./cesar-key-k -d 3
+        helloworld this is a test        
+
+
+    * freq-count.c --> This counts the number of every single input ASCII char
+
+        $ echo -ne "helloworld this is a test" | ./freq-count
+		ASCII[32  ] = 4	freq = 0.160000
+		ASCII[97 a] = 1	freq = 0.040000
+		ASCII[100 d] = 1	freq = 0.040000
+		ASCII[101 e] = 2	freq = 0.080000
+		ASCII[104 h] = 2	freq = 0.080000
+		ASCII[105 i] = 2	freq = 0.080000
+		ASCII[108 l] = 3	freq = 0.120000
+		ASCII[111 o] = 2	freq = 0.080000
+		ASCII[114 r] = 1	freq = 0.040000
+		ASCII[115 s] = 3	freq = 0.120000
+		ASCII[116 t] = 3	freq = 0.120000
+		ASCII[119 w] = 1	freq = 0.040000
+
+		Total of characters: 25
+
+
